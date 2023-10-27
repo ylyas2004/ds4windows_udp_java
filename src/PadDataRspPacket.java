@@ -1,0 +1,53 @@
+public class PadDataRspPacket {
+    // Define your struct fields, similar to C#
+    // Use appropriate data types for your fields
+    public byte[] initCode = new byte[4];
+    public short protocolVersion;
+    public short messageLen;
+    public int crc;
+    public long serverId;
+    public long messageType;
+    public byte padId;
+    public byte padState;
+    public byte model;
+    public byte connectionType;
+    public byte[] address = new byte[6];
+    public byte batteryStatus;
+    public byte isActive;
+    public long packetCounter;
+    public byte buttons1;
+    public byte buttons2;
+    public byte psButton;
+    public byte touchButton;
+    public byte lx;
+    public byte ly;
+    public byte rx;
+    public byte ry;
+    public byte dpadLeft;
+    public byte dpadDown;
+    public byte dpadRight;
+    public byte dpadUp;
+    public byte square;
+    public byte cross;
+    public byte circle;
+    public byte triangle;
+    public byte r1;
+    public byte l1;
+    public byte r2;
+    public byte l2;
+    public byte touch1Active;
+    public byte touch1PacketId;
+    public short touch1X;
+    public short touch1Y;
+    public byte touch2Active;
+    public byte touch2PacketId;
+    public short touch2X;
+    public short touch2Y;
+    public long totalMicroSec;
+    public float accelXG;
+    public float accelYG;
+    public float accelZG;
+    public float angVelPitch;
+    public float angVelYaw;
+    public float angVelRoll;
+}
